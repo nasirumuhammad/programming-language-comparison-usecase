@@ -5,8 +5,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function TabsDemo() {
   return (
-    <>
-      <Tabs defaultValue="speed" className="mt-5 capitalize">
+    <div className=" sm:justify-center sm:flex sm:items-center h-screen">
+      <Tabs defaultValue="speed" className="mt-5 capitalize ">
         <TabsList className="w-full gap-5">
           <TabsTrigger value="speed">speed</TabsTrigger>
           <TabsTrigger value="memory">memory</TabsTrigger>
@@ -73,6 +73,6 @@ export default function TabsDemo() {
           </Card>
         </TabsContent>
       </Tabs>
-    </>
+    </div>
   );
 }
